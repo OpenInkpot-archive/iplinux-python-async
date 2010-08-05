@@ -1,0 +1,18 @@
+Source: python-async
+Section: host/debian
+Priority: optional
+Maintainer: Mikhail Gusarov <dottedmag@dottedmag.net>
+Build-Depends: debhelper (>= 7), python
+Build-Depends-Indep: python-support (>= 0.8)
+Standards-Version: 3.8.3
+
+Package: python-async
+Architecture: all
+Depends: ${python:Depends}
+Provides: ${python:Provides}
+Description: python library for asynchronous processes
+ Async aims to make writing asyncronous processing easier. It provides a
+ task-graph with interdependent tasks that communicate using blocking channels,
+ allowing to delay actual computations until items are requested.  Tasks will
+ automatically be distributed among 0 or more threads for the actual
+ computation.
